@@ -1,0 +1,12 @@
+{
+    "name": "@iepflow/api",
+    "private": true,
+    "version": "0.1.0",
+    "scripts": {
+      "dev": "echo \"(stub) api dev\" && sleep 1",
+      "build": "echo \"(stub) api build\"",
+      "lint": "echo \"(stub) api lint\"",
+      "typecheck": "echo \"(stub) api typecheck\""
+    }
+  }
+  
