@@ -1,11 +1,27 @@
 {
   "name": "@iepflow/api",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "echo \"(stub) api dev\" && sleep 1",
-    "build": "echo \"(stub) api build\"",
-    "lint": "echo \"(stub) api lint\"",
-    "typecheck": "echo \"(stub) api typecheck\""
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "@trpc/server": "^11.6.0",
+    "zod": "^4.1.12"
   }
 }
